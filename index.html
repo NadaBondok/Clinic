@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Health Care Clinic</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+             width: 100%;
+             background-image: url("banner.png");
+             background-size: cover;
+             background-repeat: no-repeat;
+        }
+
+        nav {
+            width: 100%;
+            background-color: rgb(230, 243, 246);
+            height: 40px;
+        }
+
+        nav h1 {
+            font-size: 20px;
+            margin: 10px;
+            margin-left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-transform: uppercase;
+            float: left;
+        }
+
+        nav h1 span {
+            color: aqua;
+        }
+
+        nav ul {
+            margin: 10px;
+            float: right;
+        }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: black;
+            font-size: 18px;
+            padding: 0px 16px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #faf9f9;
+        }
+
+        nav ul li ul {
+            position: absolute;
+            display: none;
+            background-color: rgb(230, 243, 246);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            width: 130px;
+            padding: 5px;
+        }
+
+        nav ul li ul li a {
+            padding: 10px 15px;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #faf9f9;
+        }
+
+        .banner-text {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            margin-left: 40px;
+            max-width: 50%;
+        }
+
+        .gal {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 300px;
+            border: solid 3px rgb(230, 243, 246);
+        }
+
+        .ser {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .service img {
+            width: 50x;
+            height: 50px;
+        }
+
+        .service>div {
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .doc {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .doctor {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .doctor img {
+            width: 300px;
+            height: 300px;
+            border: solid 3px rgb(230, 243, 246);
+        }
+
+        .Rev {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .customer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .customer img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact {
+            margin-top: 50px;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background-color: rgb(230, 243, 246);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class="logo">Health<span>Care</span></h1>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Location</a>
+                <ul>
+                    <li><a>Cairo</a></li>
+                    <li><a>New Damietta</a></li>
+                    <li><a>Alex</a></li>
+                </ul>
+            </li>
+            <li><a>Connect</a></li>
+        </ul>
+    </nav>
+    <div class="banner-text">
+        <h2>About Us</h2><br/>
+        <h3>Health care clinic is one of the most advanced- day full-service facilities providing comprehensive diagnostic and surgical ophthalmology procedures.
+            Whether performing complex surgical procedures or a routine eye exam.We are thoroughly committed to delivering the utmost health care.</h3>
+    </div>
+    <div class="gal">
+        <h2>Gallery</h2>
+    </div>
+    <div class="gallery">
+        <img src="1684516635150.jpg">
+        <img src="ffa7bee390c5fa5a490ec1e9b09ba8cb.jpg">
+        <img src="1684516635150.jpg">
+        <img src="ffa7bee390c5fa5a490ec1e9b09ba8cb.jpg">
+    </div>
+    <div class="ser">
+        <h2>Our Service</h2>
+    </div>
+    <div class="service">
+        <div>
+            <img src="icon_scan_services.png">
+            <div class="description">Scan Services</div>
+            <p> Latest technologies and innovations in health investigations are integrated into this unit, The investigation
+                procedures at health Scan take a deeper look into every part of the health.</p>
+        </div>
+        <div>
+            <img src="icon_emergency_help.png">
+            <div class="description">Emergency Help</div>
+            <p>The Health Care Center is well prepared and equipped to deal very well with emergency situations as the Health
+                Care team is well trained and the facility is well equipped and prepared to deal with health
+                emergencies,with consultants in all ophthalmic fields and anesthesia consultants to deal with any an injury.</p>
+        </div>
+        <div>
+            <img src="icon_qualified_doctors.png">
+            <div class="description">Qualified Doctors</div>
+            <p> We strive to consistently meet and exceed the service and patient-care expectations of our clients. We do so by working with the finest calibers of doctors who are part of our team.</p>
+        </div>
+    </div>
+    <div class="doc">
+        <h2>Our Special Doctors</h2>
+    </div>
+    <div class="doctor">
+        <div>
+            <img src="84d5f2b28f03beb7a2fe602c4b06c090.jpg">
+            <div>Dr.Ran Commodo</div>
+        </div>
+        <div>
+            <img src="23e7c0fa712d53620e7925e7fb532791.jpg">
+            <div>Dr.Neupane Commodo</div>
+        </div>
+        <div>
+            <img src="9bc0ceb83d86f8767d2f02151de1ee7c.jpg">
+            <div>Dr.Gehy Commodo</div>
+        </div>
+    </div>
+    <div class="Rev">
+        <div>
+            <h2>Customer Reviews</h2>
+            <div class="Customer Reviews"></div>
+            <img src=" icon_medical_professionals.png">
+        </div>
+        <div>
+            <p>* Focus on quality, reasonable price, qualified people I highly recommend the center</p>
+            <p>* Very good clinic, highly recommended, they treated me great, I was very satisfied… Thank you very much Hassan and the whole team,</p>
+            <p>* I love the way they treated me, I even loved their work and the results were great. Very cool, thank you. </p>
+            <p>* Excellent service and very reliable. Recommended</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>Contact Information</h2><br/>
+        Address: 1 Dimashk St., Maadi - Cairo<br/>
+        Works Time:Sat.-Thu. 9:00am - 10:00pm<br/>
+        Email:http://www.Healthcare-center.com<br/>
+        Phone:01068015004 - 01004020211<br/><br/>
+        <hr>
+        <h6> Health Care Center © 2022 | All Rights Reserved</h6>
+    </div>
+</body>
+</html>
